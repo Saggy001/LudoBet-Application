@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".usermanual">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/headerbg1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Help Desk"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            style="@android:style/TextAppearance.Material.Headline"
+            android:textSize="36sp"
+            android:paddingTop="4dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/backbutton"
+            android:tint="@color/white"
+            android:background="@color/transparent"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/otherlayout"
+                android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Steps to Create an account"
+            android:layout_marginTop="18dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textheadre"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textcontent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1. Enter your email"
+            android:textSize="21sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textcontent2"
+            android:layout_margin="10dp"
+            android:text="1. Enter your email"
+            android:textSize="21sp"
+            android:textColor="@color/black"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textcontent3"
+        android:layout_margin="10dp"
+        android:text="1. Enter your email"
+        android:textSize="21sp"
+        android:textColor="@color/black"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textcontent4"
+        android:layout_margin="10dp"
+        android:text="1. Enter your email"
+        android:textSize="21sp"
+        android:textColor="@color/black"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textcontent5"
+        android:layout_margin="10dp"
+        android:text="1. Enter your email"
+        android:textSize="21sp"
+        android:textColor="@color/black"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textcontent6"
+        android:layout_margin="10dp"
+        android:text="1. Enter your email"
+        android:textSize="21sp"
+        android:textColor="@color/black"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textcontent7"
+        android:layout_margin="10dp"
+        android:text="1. Enter your email"
+        android:textSize="21sp"
+        android:textColor="@color/black"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textcontent8"
+        android:layout_margin="10dp"
+        android:text="1. Enter your email"
+        android:textSize="21sp"
+        android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textcontent9"
+            android:layout_margin="10dp"
+            android:text="1. Enter your email"
+            android:textSize="21sp"
+            android:textColor="@color/black"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textcontent10"
+        android:layout_margin="10dp"
+        android:text="1. Enter your email"
+        android:textSize="21sp"
+        android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textcontent11"
+            android:layout_margin="10dp"
+            android:text="1. Enter your email"
+            android:textSize="21sp"
+            android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In 1 Goti, the player who put his one Goti in house first will consider as winner as mentioned in the below image."
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/tagno1"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image1"
+                    android:src="@drawable/goti1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In 2 Goti, the player who put his two Goti in house first will consider as winner as mentioned in the below image."
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/tagno2"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image2"
+                        android:src="@drawable/goti2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In 3 Goti, the player who put his three Goti in house first will consider as winner as mentioned in the below image "
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/tagno3"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image3"
+                        android:src="@drawable/goti3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Snack, the game is played between two players of Snack and Ladder and the one whose screenshot roomcode matches with entered roomcode will considered as winner."
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/tagno4"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image4"
+                        android:src="@drawable/snack"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Full Game, the game is played between 2 players and the one who put all his goti in the house first will consider a winner as mentioned in below image. The roomcode in screenshot must be exact same as the roomcode entered by challenger."
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/tagno5"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image5"
+                        android:src="@drawable/fullgame"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

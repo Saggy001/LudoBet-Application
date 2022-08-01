@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluesemicurved"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="LudoBet Star"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/welcome_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Welcome to the best ludo betting app!"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Create new account"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="50dp"
+            android:background="@drawable/bluegradientround">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/whitecurved"
+                android:elevation="75dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="25dp">
+
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:hint="User Name"
+                    android:digits="[^AZQWERTYUIOPSDFGHXCJVNBMKLqwerytuiopsdxcfvgbhnjmklaz]"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+                <EditText
+                    android:id="@+id/email_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:paddingStart="10dp"/>
+                <EditText
+                    android:id="@+id/phone_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:hint="Whatsapp Number"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_phone_black_24dp"
+                    android:paddingStart="10dp"/>
+
+                <EditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:paddingStart="10dp"/>
+                <EditText
+                    android:id="@+id/repassword_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:hint="Re-enter Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:paddingStart="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/show_hide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:buttonTint="@color/grey"
+                    android:text="Show Password"
+                    android:textColor="@color/darkgrey" />
+
+                <EditText
+                    android:id="@+id/referralcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:hint="Referral Code (optional)"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_insert_invitation_black_24dp"
+                    android:paddingStart="10dp"/>
+
+
+                <CheckBox
+                    android:id="@+id/agebox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:textSize="9dp"
+                    android:text="I agree that I am 18 years or older and not a resident of Telengana, Assam, Orissa, Kerala, Sikkim, Nagaland or Gujrat"
+                    android:textColor="@color/darkgrey"
+                   />
+                <CheckBox
+                    android:id="@+id/termbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="I have read and agree the TERMS AND CONDITIONS. "
+                    android:textSize="9dp"
+                    android:textColor="@color/darkgrey" />
+
+                <Button
+                    android:id="@+id/signupbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/btn"
+                    android:elevation="100dp"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/login_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Sign In"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/troubleshoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Having Issue?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/progressBarSI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bluegradiantupcurved">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/terms"
+                android:text="TERMS AND CONDITIONS*"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingTop="2dp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

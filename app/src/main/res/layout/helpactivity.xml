@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+        android:id="@+id/headerview"
+            android:background="@drawable/headerbg1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Help Desk"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                style="@android:style/TextAppearance.Material.Headline"
+                android:textSize="36sp"
+                android:paddingTop="4dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/backbutton1"
+                android:tint="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headerview"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch a Video on How to Use (Recommended)"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
+            style="@style/TextAppearance.AppCompat.Body2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Tap here to watch Youtube Video"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/ic_ondemand_video_black_24dp"
+            android:drawableTint="@color/colorAccent"
+            android:paddingEnd="30dp"
+            android:id="@+id/youtubevideo"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorAccent"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Tap to watch App update Video"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_ondemand_video_black_24dp"
+            android:drawableTint="@color/colorAccent"
+            android:paddingEnd="30dp"
+            android:id="@+id/youtubevideoupdate"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorAccent"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose a Category you need help with"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"
+            android:textAlignment="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/cardview14"
+            android:elevation="50dp"
+            app:cardElevation="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="What is Goti System "
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="new"
+                android:padding="14dp"
+                android:layout_marginStart="250dp"
+                android:textColor="#07AFF1"
+                android:textSize="15sp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:id="@+id/gotibutton"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/cardview1"
+                android:elevation="50dp"
+                app:cardElevation="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="How To Create An Account"
+                    android:textSize="20sp"
+                    android:paddingTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:id="@+id/accountcreate"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="10dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cardview3"
+        android:elevation="50dp"
+        app:cardElevation="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="How To Sell LudoBet Star Chips"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_marginStart="300dp"
+            android:id="@+id/sellchips"
+            android:layout_marginTop="10dp"/>
+
+    </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cardview4"
+        android:elevation="50dp"
+        app:cardElevation="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="How To Buy LudoBet Star Chips"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_marginStart="300dp"
+            android:id="@+id/buychips"
+            android:layout_marginTop="10dp"/>
+
+    </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cardview5"
+        android:elevation="50dp"
+        app:cardElevation="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="How To Fix The Match"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/fixmatch"/>
+
+    </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cardview6"
+        android:elevation="50dp"
+        app:cardElevation="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Pending Match Related Issue"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_marginStart="300dp"
+            android:id="@+id/pendingmatch"
+            android:layout_marginTop="10dp"/>
+    </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cardview7"
+        android:elevation="50dp"
+        app:cardElevation="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Update Result Related Issue"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_marginStart="300dp"
+            android:id="@+id/updationresult"
+            android:layout_marginTop="10dp"/>
+    </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cardview8"
+        android:elevation="50dp"
+        app:cardElevation="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Transaction Related Issue"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_marginStart="300dp"
+            android:id="@+id/transactionissue"
+            android:layout_marginTop="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+   <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/cardview10"
+    android:elevation="50dp"
+    app:cardElevation="50dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="How to Update Profile"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:layout_marginStart="300dp"
+        android:id="@+id/updateprofileissue"
+        android:layout_marginTop="10dp"/>
+</androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="50dp"
+            android:elevation="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Contact Admin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Query will be Answered Within 12 Hours"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message Us"
+                android:id="@+id/contactadmin"
+                android:drawableStart="@drawable/ic_message_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorAccent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message Us"
+                android:id="@+id/contactadmin2"
+                android:drawableStart="@drawable/ic_message_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorAccent"
+                />
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="SELL CHIPS"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(1 Ruppee = 1 Chips)"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Processing Timing:"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="39dp"
+            android:textSize="19sp"
+            android:id="@+id/tag5"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/holo_purple"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:00"
+            android:id="@+id/prtime"
+            android:layout_toEndOf="@+id/tag5"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textSize="19sp"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/holo_purple"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:text="Choose the payment method"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAYTM"
+        android:id="@+id/paytm"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPI"
+        android:layout_below="@+id/paytm"
+        android:id="@+id/upi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOOGLE PAY"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/googlepay"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE PE"
+            android:layout_below="@+id/googlepay"
+            android:layout_alignStart="@+id/googlepay"
+            android:id="@+id/phonepe"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"/>
+    </RelativeLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="35dp"
+            android:inputType="number"
+            android:layout_marginStart="35dp"
+            android:textAlignment="center"
+            android:id="@+id/amount"
+            android:hint="Amount of Chips"
+            android:background="@drawable/buttonhomeround" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:textAlignment="center"
+            android:id="@+id/phoneno"
+            android:hint="Payment number/Address"
+            android:background="@drawable/buttonhomeround" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="I agree that I am 18 years or older and not a resident of Telengana, Assam, Orissa, Kerela, Sikkim, Nagaland and Gujarat"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"
+        android:id="@+id/checkboxage"
+        android:buttonTint="@android:color/holo_red_light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:background="#15DC2C"
+            android:text="Proceed" />
+    </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

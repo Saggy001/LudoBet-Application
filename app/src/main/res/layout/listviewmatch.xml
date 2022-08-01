@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Sagar vs Rohit for 1000"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+                android:layout_marginStart="3dp"
+            android:elevation="50dp"
+            android:id="@+id/matchtag"
+            android:layout_marginBottom="10dp"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="Play"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="205dp"
+                android:textColor="@color/white"
+                android:background="@drawable/listviewbutton"
+                android:id="@+id/play" />
+          <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:src="@drawable/ic_delete_black_24dp"
+              android:tint="@android:color/holo_red_dark"
+              android:background="@color/white"
+              android:id="@+id/deletebutton"
+              android:layout_centerVertical="true"
+              android:layout_toEndOf="@+id/play"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        />
+</LinearLayout>

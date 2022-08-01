@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountSetting"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/headerbg1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Account"
+            android:textAlignment="center"
+            style="@android:style/TextAppearance.Material.Headline"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:paddingTop="4dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:tint="@color/white"
+            android:id="@+id/backbutton1"
+            android:background="@color/transparent"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:id="@+id/editdetails"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/colorAccent"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="30dp" />
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorAccent"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginStart="20dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="email"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingTop="2dp"
+            android:id="@+id/emailtag"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:textColorLink="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Name"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginStart="20dp"
+        android:textSize="17sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/nametag"
+        android:digits="[^AZQWERTYUUIOPSDFGHXCJVNBMKLqwerytuiopsdxcfvgbhnjmklaz]"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:textColorLink="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp Number"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginStart="20dp"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:id="@+id/phonetag"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:textColorLink="@color/colorAccent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savebutton"
+        android:text="save"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:elevation="4dp"
+        android:outlineProvider="bounds"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/note"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_red_dark"
+        style="@style/TextAppearance.AppCompat.Body2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/note"
+        android:textSize="19sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@android:color/holo_red_light"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:text="If you want to change your Display Name, Make sure you don't have any sell or add Chips request, You haven't set any challenge and no result is pending by your side."/>
+    </RelativeLayout>
+
+
+</LinearLayout>

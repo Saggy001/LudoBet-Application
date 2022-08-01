@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#DBDDDD"
+    android:layout_height="match_parent"
+    tools:context=".ReferAndEarn">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/headerview"
+        android:background="@drawable/headerbg1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Refer And Earn"
+            android:textAlignment="center"
+            style="@android:style/TextAppearance.Material.Headline"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:paddingTop="2dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/backbutton1"
+            android:tint="@color/white"
+            android:background="@color/transparent"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:outlineProvider="bounds"
+        android:background="#ffffff"
+        android:elevation="4dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:id="@+id/englishcond"
+        android:textColor="#204E02"
+        android:text="You can now earn money by inviting other person in LudoBet Star app through your Refer Code.\nYou will get 1% of the total winning amount won by the person you have invited, like when he win 10000 chips in total then you will get 100 chips."
+       />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/englishcond"
+            android:id="@+id/hindicond"
+            android:textColor="#115103"
+            android:text="अब आप अपने Refer Code के माध्यम से LudoBet Star ऐप में किसी अन्य व्यक्ति को आमंत्रित करके पैसा कमा सकते हैं।\nआपके द्वारा आमंत्रित व्यक्ति द्वारा जीती गई कुल जीत राशि का 1% आपको मिलेगा, जैसे जब वह कुल 10000 चिप्स जीतता है तो आपको 100 चिप्स मिलेंगे।"
+            />
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Referral Code :"
+                    android:id="@+id/tag1"
+                    android:layout_centerVertical="true"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#3D0361"
+                    android:textSize="24sp"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="#ffffff"
+                    android:text="2FUG12"
+                    android:layout_toEndOf="@+id/tag1"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/referalcode"
+                    android:textColor="#3D0361"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_content_copy_black_24dp"
+                    android:tint="#3D0361"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/copycode"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App Link :"
+                    android:id="@+id/tag4"
+                    android:layout_centerVertical="true"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#3D0361"
+                    android:textSize="24sp"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="applinksnkjdsgggggggggggggggggggggggggggggggggggggggggggggggggggg"
+                    android:layout_toEndOf="@+id/tag4"
+                    android:layout_marginStart="20dp"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/applink"
+                    android:layout_marginEnd="50dp"
+                    android:textColor="#3D0361"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_content_copy_black_24dp"
+                    android:tint="#3D0361"
+                    android:id="@+id/copylink"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="bounds"
+                android:elevation="3dp"
+                android:layout_margin="30dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#EA0C0C"
+                    android:textSize="18sp"
+                    android:id="@+id/tag2"
+                    style="@style/TextAppearance.AppCompat.Body2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make sure that the person add your referral code while creating account, otherwise no you wouldn't receive any referral earning."
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tag2"
+                    android:layout_margin="10dp"
+                    android:textColor="#F10C0C"
+                    android:layout_centerHorizontal="true"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

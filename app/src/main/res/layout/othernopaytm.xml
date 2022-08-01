@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paid at Admin's another number? Fill it"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        style="@style/TextAppearance.AppCompat.Body2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:id="@+id/recipientno"
+        android:hint="Recipient Paytm Number"
+        android:textColorHint="#3C3C3C"
+        android:layout_marginEnd="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:id="@+id/transidortime"
+        android:hint="Transaction Id or Time"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#3C3C3C"
+        android:layout_marginEnd="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="Amount"
+        android:id="@+id/amountpaid"
+        android:digits="[1234567890:/\|-]"
+        android:inputType="number"
+        android:textColorHint="#3C3C3C"
+        android:layout_marginEnd="40dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/addmoney"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_green_light"/>
+    </RelativeLayout>
+</LinearLayout>

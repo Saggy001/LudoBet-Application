@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialogbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/m_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_toEndOf="@id/image_view"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginTop="28dp"
+            style="@style/TextAppearance.AppCompat.Body2" />
+        <TextView
+            android:id="@+id/m_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/m_user_name"
+            android:text="User Email"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_toEndOf="@+id/image_view"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/View"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:elevation="50dp"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/darkgrey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Pending Matches"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Pending matches will be shown here"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/pendingview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dialog_button"
+                    android:drawableStart="@drawable/ic_sentiment_dissatisfied_black_24dp"
+                    android:drawableTint="@color/white"
+                    android:paddingStart="5dp"
+                    android:text="View"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_margin="10dp"
+                android:elevation="50dp"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/darkgrey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="History"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Your previous matches history"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/historybutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dialog_button"
+                    android:drawableStart="@drawable/ic_history_black_24dp"
+                    android:drawableTint="@color/white"
+                    android:paddingStart="5dp"
+                    android:text="View"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_margin="10dp"
+                android:elevation="50dp"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/darkgrey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="My Wallet"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Add and Withdraw money"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/wallletview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dialog_button"
+                    android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
+                    android:drawableTint="@color/white"
+                    android:paddingStart="5dp"
+                    android:text="View"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_margin="10dp"
+                android:elevation="50dp"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/darkgrey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Refer And Earn"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Invite your friends to LudoBet"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/inviteview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dialog_button"
+                    android:drawableStart="@drawable/ic_person_add_black_24dp"
+                    android:drawableTint="@color/white"
+                    android:paddingStart="5dp"
+                    android:text="View"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_margin="10dp"
+                android:elevation="50dp"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/darkgrey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Help Desk"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Insturction for using the app"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/helpview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dialog_button"
+                    android:drawableStart="@drawable/ic_help_black_24dp"
+                    android:drawableTint="@color/white"
+                    android:paddingStart="5dp"
+                    android:text="View"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_margin="10dp"
+                android:elevation="50dp"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/darkgrey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Terms and Conditions"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Commission charges etc"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/termsview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dialog_button"
+                    android:drawableStart="@drawable/ic_assignment_black_24dp"
+                    android:drawableTint="@color/white"
+                    android:paddingStart="5dp"
+                    android:text="View"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:text="Log Out"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorAccent"
+        android:text="No History Found"
+        android:textSize="26sp"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:id="@+id/tag"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/headerview"
+        android:background="@drawable/headerbg1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="History"
+            android:textAlignment="center"
+            style="@android:style/TextAppearance.Material.Headline"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:paddingTop="2dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/backbutton1"
+            android:tint="@color/white"
+            android:background="@color/transparent"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view2"
+        android:layout_below="@id/headerview"
+        android:background="@color/darkgrey"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listviewhistory"
+        tools:listitem="@layout/listitemhistory"
+        android:layout_below="@+id/view2"/>
+
+</RelativeLayout>

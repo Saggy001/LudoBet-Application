@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/headingmatch"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="Sagar vs Rohit for 1000"
+                android:textAlignment="center"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/whatsapp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headingmatch"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="35dp"
+                android:background="#1DDC25"
+                android:drawableStart="@drawable/ic_whatsapp"
+                android:drawableTint="@color/white"
+                android:paddingStart="10dp"
+                android:text="Whatsapp"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headingmatch"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="60dp"
+                android:background="#085EB3"
+                android:drawableStart="@drawable/ic_phone_black_24dp"
+                android:drawableTint="@color/white"
+                android:paddingStart="10dp"
+                android:text="Call"
+                android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernamenote"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="25dp"
+                android:outlineProvider="bounds"
+                android:elevation="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="NOTE"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/noteenglish"
+                    android:textColor="#2A0140"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter the correct username of the LUDO KING ID which you are going to play with, so that your balance will update without any difficulty.\nIf you had updated wrong username then no matter you win or loss, yu will loss your money."
+                    android:textSize="15sp"
+                    android:textColor="#8313F3"
+                    android:id="@+id/noteconenglish"
+                    android:layout_below="@+id/noteenglish"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="ध्यान दें"
+                    android:layout_below="@+id/noteconenglish"
+                    android:id="@+id/notehindi"
+                    android:textColor="#2A0140"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LUDO KING account का सही उपयोगकर्ता नाम दर्ज करें, जिसके साथ आप खेलने जा रहे हैं, ताकि आपके पैसे बिना किसी कठिनाई के अपडेट हो जाए।\nयदि आपने गलत उपयोगकर्ता नाम अपडेट किया था, तो आपके जीतने या खोने पर कोई फर्क नहीं पड़ता, आपके पैसे का नुकसान होगा।"
+                    android:textSize="15sp"
+                    android:textColor="#8313F3"
+                    android:id="@+id/noteconhindi"
+                    android:layout_below="@+id/notehindi"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ludokinguserlayout">
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your username mentioned in Ludo King app (For Result purpose)"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/tag9"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_marginStart="20dp" />
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tag9"
+                    android:hint="Username"
+                    android:textColor="@color/black"
+                    android:id="@+id/ludousername"
+                    android:textAlignment="center"
+                    android:textColorHint="#816477"
+                    android:background="@drawable/buttonhomeround"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="170dp"
+                    android:layout_below="@+id/tag9"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/usernameset"
+                    android:text="set"
+                    android:background="#AFA902"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tag9"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ludokingusername"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/editromodetails">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:hint="ENTER ROOMCODE"
+                android:background="#ffffff"
+                android:elevation="50dp"
+                android:inputType="number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/roomcodeedit"
+                android:textAlignment="center"
+                android:layout_marginStart="70dp"
+                android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:id="@+id/roomcodetext"
+                    android:text="Waiting for Roomcode"
+                    android:paddingTop="2dp"
+                    android:elevation="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_centerInParent="true"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="30dp"
+                    android:text="Set"
+                    android:visibility="gone"
+                    android:background="@android:color/holo_purple"
+                    android:id="@+id/roomcodeset"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:id="@+id/copytoclipboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_content_copy_black_24dp"
+                    android:tint="@color/darkgrey" />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:paddingStart="4dp"
+                    android:paddingTop="2dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="Change Roomcode"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/changeroomcode"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="#3681A3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:outlineProvider="bounds"
+                android:id="@+id/hintdetails"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="30dp">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="HINT"
+               android:id="@+id/hinttext"
+               android:textStyle="bold"
+               android:textAlignment="center"
+               android:textColor="@android:color/holo_red_dark"
+               android:layout_marginTop="10dp"
+               android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hinttext"
+                android:text="CANCEL result within 2 minutes will result into CANCEL Match, only if not a single Goti is opened by the both sides"
+                android:textColor="@android:color/holo_red_dark"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:id="@+id/conditiontext"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/conditiontext"
+                android:text="Rules:"
+                android:id="@+id/ruletext"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. If you WON the match, Click on 'I WON' and send Result."
+                android:layout_below="@+id/ruletext"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/holo_red_dark"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:id="@+id/ruleone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. If you LOST the match, Click on 'I LOST' and send Result."
+                android:layout_below="@+id/ruleone"
+                android:textSize="13sp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/holo_red_dark"
+                android:textAlignment="center"
+                android:id="@+id/ruletwo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag1"
+                android:layout_below="@id/ruletwo"
+                android:text="If you don't send Result or send WRONG Result, You'll lose your money."
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="संकेत"
+                    android:id="@+id/hinttexthindi"
+                    android:layout_below="@+id/tag1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hinttexthindi"
+                    android:text="2 मिनट के भीतर CANCEL का परिणाम CANCEL मैच में बदल जाएगा, केवल तभी तक जब किसी की Goti खुला नहीं होगा"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textAlignment="center"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/conditiontexthindi"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/conditiontexthindi"
+                    android:text="नियम:"
+                    android:id="@+id/ruletexthindi"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. यदि आप मैच जीत जाते हैं, तो 'I WON' पर क्लिक करें और परिणाम भेजें।"
+                    android:layout_below="@+id/ruletexthindi"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    android:id="@+id/ruleonehindi"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. यदि आप मैच को हार जाते हैं, तो 'I LOST' पर क्लिक करें और परिणाम भेजें।"
+                    android:layout_below="@+id/ruleonehindi"
+                    android:textSize="13sp"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textAlignment="center"
+                    android:id="@+id/ruletwohindi"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tag2"
+                    android:layout_below="@id/ruletwohindi"
+                    android:text="यदि आप परिणाम नहीं भेजते हैं या गलत परिणाम भेजते हैं, तो आप अपना पैसा खो देंगे।"
+                    android:textAlignment="center"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/result">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I WON"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/iwon"
+                android:layout_centerHorizontal="true" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I LOST"
+                    android:layout_alignStart="@+id/iwon"
+                    android:textSize="18sp"
+                    android:id="@+id/ilost"
+                    android:layout_below="@+id/iwon"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CANCEL MATCH"
+                    android:layout_below="@+id/ilost"
+                    android:textSize="18sp"
+                    android:id="@+id/cancelmatch"
+                    android:layout_alignStart="@+id/iwon"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/winingproof"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone" />
+            <Button
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:text="Upload Screenshot"
+                android:drawableStart="@drawable/ic_add_black_24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/winingproof"
+                android:layout_marginTop="10dp"
+                android:id="@+id/uploadscreenshot" />
+                <Button
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Send Result"
+                    android:textColor="@color/white"
+                    android:background="#435AE8"
+                    android:textAlignment="center"
+                    android:id="@+id/updateresult"
+                    android:layout_marginBottom="30dp"
+                    android:layout_below="@+id/uploadscreenshot"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
